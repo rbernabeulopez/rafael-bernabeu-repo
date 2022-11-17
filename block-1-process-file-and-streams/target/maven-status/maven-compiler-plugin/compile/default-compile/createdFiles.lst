@@ -1,0 +1,4 @@
+org\example\Person.class
+org\example\InvalidLineFormatException.class
+org\example\FileAnalyzer.class
+org\example\Main.class
