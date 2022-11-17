@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/block-1-process-file-and-streams/pom.xml" />
+        <option value="$PROJECT_DIR$/block3-maven-package/pom.xml" />
       </list>
     </option>
   </component>
