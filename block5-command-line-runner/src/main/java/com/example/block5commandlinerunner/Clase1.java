@@ -1,10 +1,10 @@
 package com.example.block5commandlinerunner;
 
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
-@Configuration
+@Component
 public class Clase1 {
     @PostConstruct
     private void inicial() {

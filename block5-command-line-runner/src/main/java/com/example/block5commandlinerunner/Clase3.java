@@ -1,9 +1,9 @@
 package com.example.block5commandlinerunner;
 
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
 public class Clase3 implements CommandLineRunner {
     public void run(String... args) {
         System.out.println("Soy la tercera clase");

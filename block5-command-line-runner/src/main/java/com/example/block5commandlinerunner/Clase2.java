@@ -2,9 +2,9 @@ package com.example.block5commandlinerunner;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
 public class Clase2 {
     @Bean
     CommandLineRunner ejecutame() {
