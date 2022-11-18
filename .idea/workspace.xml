@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Created block5-properties project">
-      <change beforePath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/com/example/block5commandlinerunner/Clase1.java" beforeDir="false" afterPath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/com/example/block5commandlinerunner/Clase1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/com/example/block5commandlinerunner/Clase2.java" beforeDir="false" afterPath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/com/example/block5commandlinerunner/Clase2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/com/example/block5commandlinerunner/Clase3.java" beforeDir="false" afterPath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/com/example/block5commandlinerunner/Clase3.java" afterDir="false" />
+    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Using Component annotation">
+      <change afterPath="$PROJECT_DIR$/block5-properties/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block5-properties/src/main/java/com/example/block5properties/Block5PropertiesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/block5-properties/src/main/java/com/example/block5properties/Block5PropertiesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block5-properties/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +28,7 @@
         <entry key="$PROJECT_DIR$" value="8b5586f5c9726a41d5d3900f36be11f532e8546d" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/block5-properties" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -65,7 +66,7 @@
       <recent name="com.example.block5commandlinerunner" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Block5CommandLineRunnerApplication">
+  <component name="RunManager" selected="Spring Boot.Block5PropertiesApplication">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="block3-maven-package" />
@@ -195,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668763306470</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Using Component annotation">
+      <created>1668763664878</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668763664878</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +227,7 @@
     <MESSAGE value="Added first exercise" />
     <MESSAGE value="Added block command line runner exercise" />
     <MESSAGE value="Created block5-properties project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created block5-properties project" />
+    <MESSAGE value="Using Component annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using Component annotation" />
   </component>
 </project>
