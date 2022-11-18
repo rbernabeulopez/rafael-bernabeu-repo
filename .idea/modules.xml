@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/block3-create-repo-git.iml" filepath="$PROJECT_DIR$/block3-create-repo-git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/block5-command-line-runner/block5-command-line-runner.iml" filepath="$PROJECT_DIR$/block5-command-line-runner/block5-command-line-runner.iml" />
       <module fileurl="file://$PROJECT_DIR$/rafael-bernabeu-repo.iml" filepath="$PROJECT_DIR$/rafael-bernabeu-repo.iml" />
     </modules>
   </component>

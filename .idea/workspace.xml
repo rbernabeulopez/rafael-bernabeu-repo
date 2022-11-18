@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Added block command line runner exercise">
-      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/com/example/block5commandlinerunner/Block5CommandLineRunnerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/com/example/block5commandlinerunner/Clase1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/com/example/block5commandlinerunner/Clase2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/com/example/block5commandlinerunner/Clase3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/src/test/java/com/example/block5commandlinerunner/Block5CommandLineRunnerApplicationTests.java" afterDir="false" />
+    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Created block5-properties project">
+      <change afterPath="$PROJECT_DIR$/block3-create-repo-git.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/src/main/java/com/example/block5properties/Block5PropertiesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/src/test/java/com/example/block5properties/Block5PropertiesApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +40,7 @@
         <entry key="$PROJECT_DIR$" value="8b5586f5c9726a41d5d3900f36be11f532e8546d" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/block5-properties" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -116,9 +119,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Block5PropertiesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="block5-properties" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block5properties.Block5PropertiesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Spring Boot.Block5PropertiesApplication" />
       <item itemvalue="Spring Boot.Block5CommandLineRunnerApplication" />
     </list>
     <recent_temporary>
@@ -183,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668761342699</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added block command line runner exercise">
+      <created>1668761381818</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668761381818</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +224,7 @@
     <MESSAGE value="Metadata files" />
     <MESSAGE value="Added first exercise" />
     <MESSAGE value="Added block command line runner exercise" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added block command line runner exercise" />
+    <MESSAGE value="Created block5-properties project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created block5-properties project" />
   </component>
 </project>
