@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Using Component annotation">
-      <change afterPath="$PROJECT_DIR$/block5-properties/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block5-properties/src/main/java/com/example/block5properties/Block5PropertiesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/block5-properties/src/main/java/com/example/block5properties/Block5PropertiesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block5-properties/src/main/resources/application.properties" beforeDir="false" />
+    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Finished properties exercise">
+      <change beforePath="$PROJECT_DIR$/block5-properties/src/main/java/com/example/block5properties/Block5PropertiesApplication.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +30,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2HfDsUpU6It298gvrOlKxh603l0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -50,11 +54,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "temurin-17",
-    "last_opened_file_path": "C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block3-create-repo-git/PROYECTOGIT",
+    "last_opened_file_path": "C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block5-properties",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "f43395945d375087f079b9182010aa07"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -139,6 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668667454821</updated>
       <workItem from="1668667456295" duration="5588000" />
+      <workItem from="1669016997580" duration="338000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
@@ -203,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668763664878</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finished properties exercise">
+      <created>1668768255926</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668768255926</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +241,7 @@
     <MESSAGE value="Added block command line runner exercise" />
     <MESSAGE value="Created block5-properties project" />
     <MESSAGE value="Using Component annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using Component annotation" />
+    <MESSAGE value="Finished properties exercise" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished properties exercise" />
   </component>
 </project>
