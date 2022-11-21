@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/block5-logging/block5-logging.iml" filepath="$PROJECT_DIR$/block5-logging/block5-logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/rafael-bernabeu-repo.iml" filepath="$PROJECT_DIR$/rafael-bernabeu-repo.iml" />
     </modules>
   </component>

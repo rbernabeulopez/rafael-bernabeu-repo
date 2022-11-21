@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Finished properties exercise">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block5-properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/block5-logging/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/block5-logging/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block5-logging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/block5-logging/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block5-logging/src/main/java/com/example/block5logging/Block5LoggingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/block5-logging/src/main/java/com/example/block5logging/Block5LoggingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block5-logging/src/test/java/com/example/block5logging/Block5LoggingApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/block5-logging/src/test/java/com/example/block5logging/Block5LoggingApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +29,7 @@
         <entry key="$PROJECT_DIR$" value="8b5586f5c9726a41d5d3900f36be11f532e8546d" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/block5-logging" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "temurin-17",
+    "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/rafael.bernabeu/Downloads/block5-properties",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
@@ -70,6 +70,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block3-create-repo-git\PROYECTOGIT" />
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block-1-process-file-and-streams\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.block5commandlinerunner" />
@@ -148,7 +151,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668667454821</updated>
       <workItem from="1668667456295" duration="5588000" />
-      <workItem from="1669016997580" duration="588000" />
+      <workItem from="1669016997580" duration="2896000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
@@ -227,7 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669017349702</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Finished properties exercise">
+      <created>1669017642613</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669017642613</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Removed unused test">
+      <created>1669017791083</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669017791083</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +270,7 @@
     <MESSAGE value="Created block5-properties project" />
     <MESSAGE value="Using Component annotation" />
     <MESSAGE value="Finished properties exercise" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished properties exercise" />
+    <MESSAGE value="Removed unused test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unused test" />
   </component>
 </project>
