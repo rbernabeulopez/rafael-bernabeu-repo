@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block6-simple-controllers/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/block6-simple-controllers/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block6-simple-controllers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/block6-simple-controllers/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block6-simple-controllers/src/main/java/com/example/block6simplecontrollers/Block6SimpleControllersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/block6-simple-controllers/src/main/java/com/example/block6simplecontrollers/Block6SimpleControllersApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block6-simple-controllers/src/test/java/com/example/block6simplecontrollers/Block6SimpleControllersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/block6-simple-controllers/src/test/java/com/example/block6simplecontrollers/Block6SimpleControllersApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -57,7 +54,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "temurin-17",
     "last_opened_file_path": "C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block5-profiles",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
@@ -76,24 +75,17 @@
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block5-logging\src\main\resources" />
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.block6simplecontrollers" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.block5commandlinerunner" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Block5ProfilesApplication LOCAL">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="block3-maven-package" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UsuarioControllerTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="block-1-process-file-and-streams" />
@@ -104,6 +96,53 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="block6-simple-controllers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.block6simplecontrollers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.block6simplecontrollers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block6simplecontrollers.UsuarioControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioControllerTest.addEdad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="block6-simple-controllers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.block6simplecontrollers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.block6simplecontrollers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block6simplecontrollers.UsuarioControllerTest" />
+      <option name="METHOD_NAME" value="addEdad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioControllerTest.saludar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="block6-simple-controllers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.block6simplecontrollers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.block6simplecontrollers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block6simplecontrollers.UsuarioControllerTest" />
+      <option name="METHOD_NAME" value="saludar" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,8 +185,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.UsuarioControllerTest" />
+      <item itemvalue="JUnit.UsuarioControllerTest.addEdad" />
+      <item itemvalue="JUnit.UsuarioControllerTest.saludar" />
       <item itemvalue="Spring Boot.Block6SimpleControllersApplication" />
       <item itemvalue="Spring Boot.Block5PropertiesApplication" />
       <item itemvalue="Spring Boot.Block5LoggingApplication" />
@@ -158,10 +199,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UsuarioControllerTest" />
+        <item itemvalue="JUnit.UsuarioControllerTest.addEdad" />
+        <item itemvalue="JUnit.UsuarioControllerTest.saludar" />
         <item itemvalue="Spring Boot.Block5CommandLineRunnerApplication" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -176,7 +217,7 @@
       <updated>1668667454821</updated>
       <workItem from="1668667456295" duration="5588000" />
       <workItem from="1669016997580" duration="14462000" />
-      <workItem from="1669101702669" duration="9510000" />
+      <workItem from="1669101702669" duration="11495000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
