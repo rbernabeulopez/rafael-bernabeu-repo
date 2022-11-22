@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block6-simple-controllers/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/block6-simple-controllers/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block6-simple-controllers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/block6-simple-controllers/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block6-simple-controllers/src/main/java/com/example/block6simplecontrollers/Block6SimpleControllersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/block6-simple-controllers/src/main/java/com/example/block6simplecontrollers/Block6SimpleControllersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block6-simple-controllers/src/test/java/com/example/block6simplecontrollers/Block6SimpleControllersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/block6-simple-controllers/src/test/java/com/example/block6simplecontrollers/Block6SimpleControllersApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +29,7 @@
         <entry key="$PROJECT_DIR$" value="8b5586f5c9726a41d5d3900f36be11f532e8546d" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/block5-profiles" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/block6-simple-controllers" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "temurin-17",
+    "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block5-profiles",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
@@ -134,9 +138,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Block6SimpleControllersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="block6-simple-controllers" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block6simplecontrollers.Block6SimpleControllersApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Spring Boot.Block6SimpleControllersApplication" />
       <item itemvalue="Spring Boot.Block5PropertiesApplication" />
       <item itemvalue="Spring Boot.Block5LoggingApplication" />
       <item itemvalue="Spring Boot.Block5ProfilesApplication LOCAL" />
@@ -164,7 +176,7 @@
       <updated>1668667454821</updated>
       <workItem from="1668667456295" duration="5588000" />
       <workItem from="1669016997580" duration="14462000" />
-      <workItem from="1669101702669" duration="9086000" />
+      <workItem from="1669101702669" duration="9510000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
