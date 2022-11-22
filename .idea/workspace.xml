@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block5-logging/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/block5-logging/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block5-logging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/block5-logging/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block5-logging/src/main/java/com/example/block5logging/Block5LoggingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/block5-logging/src/main/java/com/example/block5logging/Block5LoggingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block5-logging/src/test/java/com/example/block5logging/Block5LoggingApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/block5-logging/src/test/java/com/example/block5logging/Block5LoggingApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +28,7 @@
         <entry key="$PROJECT_DIR$" value="8b5586f5c9726a41d5d3900f36be11f532e8546d" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/block5-logging" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -58,12 +57,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/rafael.bernabeu/Downloads/block5-properties",
+    "last_opened_file_path": "C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block5-properties",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "f43395945d375087f079b9182010aa07"
+    "spring.configuration.checksum": "536c20db7aa3328b8bac000a8d5cda9c"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -72,6 +71,7 @@
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block-1-process-file-and-streams\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block5-logging\src\main\resources" />
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -107,6 +107,7 @@
       </method>
     </configuration>
     <configuration name="Block5CommandLineRunnerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
       <module name="block5-command-line-runner" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block5commandlinerunner.Block5CommandLineRunnerApplication" />
       <extension name="coverage">
@@ -119,7 +120,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Block5LoggingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="block5-logging" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block5logging.Block5LoggingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Block5PropertiesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="block5-properties" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block5properties.Block5PropertiesApplication" />
       <method v="2">
@@ -129,6 +139,7 @@
     <list>
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Spring Boot.Block5LoggingApplication" />
       <item itemvalue="Spring Boot.Block5PropertiesApplication" />
       <item itemvalue="Spring Boot.Block5CommandLineRunnerApplication" />
     </list>
@@ -151,7 +162,8 @@
       <option name="presentableId" value="Default" />
       <updated>1668667454821</updated>
       <workItem from="1668667456295" duration="5588000" />
-      <workItem from="1669016997580" duration="2896000" />
+      <workItem from="1669016997580" duration="14462000" />
+      <workItem from="1669101702669" duration="3700000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>

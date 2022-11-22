@@ -2,11 +2,13 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="block5-command-line-runner" />
+        <module name="block5-logging" />
         <module name="block5-properties" />
         <module name="block3-maven-package" />
         <module name="block-1-process-file-and-streams" />
@@ -16,6 +18,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="block5-command-line-runner" options="-parameters" />
+      <module name="block5-logging" options="-parameters" />
       <module name="block5-properties" options="-parameters" />
     </option>
   </component>

@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Bean;
 public class Block5PropertiesApplication {
 
     public static void main(String[] args) {
-        System.setProperty("new.value", "funciona");
         SpringApplication.run(Block5PropertiesApplication.class, args);
     }
 
@@ -19,7 +18,7 @@ public class Block5PropertiesApplication {
     @Value("${my.number}")
     private String myNumber;
 
-    @Value("${new.value}")
+    @Value("${new.value:no te funciona}")
     private String newProperty;
 
     @Bean
