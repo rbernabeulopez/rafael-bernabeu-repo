@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Block5ProfilesApplication INTEGRATION" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="ACTIVE_PROFILES" value="INTEGRATION" />
+    <module name="block5-profiles" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block5profiles.Block5ProfilesApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
