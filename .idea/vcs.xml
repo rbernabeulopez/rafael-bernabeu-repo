@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/block5-logging" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/block5-profiles" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/block6-path-variable-headers" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/block6-person-controllers" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/block6-simple-controllers" vcs="Git" />
   </component>

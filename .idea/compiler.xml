@@ -15,6 +15,7 @@
         <module name="block6-person-controllers" />
         <module name="block3-maven-package" />
         <module name="block-1-process-file-and-streams" />
+        <module name="block6-path-variable-headers" />
       </profile>
     </annotationProcessing>
   </component>
@@ -24,6 +25,7 @@
       <module name="block5-logging" options="-parameters" />
       <module name="block5-profiles" options="-parameters" />
       <module name="block5-properties" options="-parameters" />
+      <module name="block6-path-variable-headers" options="-parameters" />
       <module name="block6-person-controllers" options="-parameters" />
       <module name="block6-simple-controllers" options="-parameters" />
     </option>

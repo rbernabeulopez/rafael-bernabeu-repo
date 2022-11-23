@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +30,7 @@
         <entry key="$PROJECT_DIR$" value="8b5586f5c9726a41d5d3900f36be11f532e8546d" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/block6-path-variable-headers" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -83,11 +87,12 @@
       <recent name="com.example.block6simplecontrollers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.block6pathvariableheaders" />
       <recent name="com.example.block6personcontrollers" />
       <recent name="com.example.block5commandlinerunner" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Block6PersonControllersApplication">
+  <component name="RunManager" selected="Spring Boot.Block6PathVariableHeadersApplication">
     <configuration name="Controlador1Test.addPersona" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="block6-person-controllers" />
       <extension name="coverage">
@@ -181,6 +186,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Block6PathVariableHeadersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="block6-path-variable-headers" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block6pathvariableheaders.Block6PathVariableHeadersApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Block6PersonControllersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="block6-person-controllers" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block6personcontrollers.Block6PersonControllersApplication" />
@@ -201,6 +213,7 @@
       <item itemvalue="JUnit.UsuarioControllerTest" />
       <item itemvalue="JUnit.UsuarioControllerTest.addEdad" />
       <item itemvalue="JUnit.com.example.block6personcontrollers in block6-person-controllers" />
+      <item itemvalue="Spring Boot.Block6PathVariableHeadersApplication" />
       <item itemvalue="Spring Boot.Block6PersonControllersApplication" />
       <item itemvalue="Spring Boot.Block6SimpleControllersApplication" />
       <item itemvalue="Spring Boot.Block5PropertiesApplication" />
@@ -230,7 +243,7 @@
       <workItem from="1668667456295" duration="5588000" />
       <workItem from="1669016997580" duration="14462000" />
       <workItem from="1669101702669" duration="16598000" />
-      <workItem from="1669188526614" duration="3366000" />
+      <workItem from="1669188526614" duration="4701000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
