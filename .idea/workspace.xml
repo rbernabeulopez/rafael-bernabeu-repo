@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -230,7 +230,7 @@
       <workItem from="1668667456295" duration="5588000" />
       <workItem from="1669016997580" duration="14462000" />
       <workItem from="1669101702669" duration="16598000" />
-      <workItem from="1669188526614" duration="752000" />
+      <workItem from="1669188526614" duration="1728000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
@@ -357,13 +357,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/block6-person-controllers/src/main/java/com/example/block6personcontrollers/Controlador1.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/block6-person-controllers/src/main/java/com/example/block6personcontrollers/Controlador2.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="2" />
+          <line>29</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

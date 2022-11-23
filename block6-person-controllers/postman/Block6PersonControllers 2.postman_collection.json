@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "18cfb18a-3140-4e49-b927-9ce8c6b6f2c8",
+		"name": "Block6PersonControllers 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24481989"
+	},
+	"item": [
+		{
+			"name": "addCiudad",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Madrid\",\r\n    \"numeroHabitantes\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/controlador1/addCiudad",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controlador1",
+						"addCiudad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCiudad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/controlador2/getCiudad",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controlador2",
+						"getCiudad"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
