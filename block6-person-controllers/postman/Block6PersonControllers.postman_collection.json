@@ -45,23 +45,7 @@
 			"name": "Controlador2",
 			"request": {
 				"method": "GET",
-				"header": [
-					{
-						"key": "nombre",
-						"value": "Rafa",
-						"type": "text"
-					},
-					{
-						"key": "poblacion",
-						"value": "Alicante",
-						"type": "text"
-					},
-					{
-						"key": "edad",
-						"value": "19",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"url": {
 					"raw": "localhost:8080/controlador2/getPersona",
 					"host": [

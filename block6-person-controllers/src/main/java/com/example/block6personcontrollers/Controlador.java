@@ -4,10 +4,14 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * El ejercicio pide obtener uno de los beans creados (bean1, bean2, bean3)
+ * según el nombre que le pasemos por el path
+ */
 @RestController
 @RequestMapping("controlador")
 public class Controlador {
-    @Autowired
+    @Autowired // otra opción encontrada por google :)
     private BeanFactory beanFactory;
 
     @Autowired

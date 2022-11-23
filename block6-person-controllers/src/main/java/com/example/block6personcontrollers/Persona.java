@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 
 @Getter
 @Setter
-@Component
 public class Persona {
     private String nombre;
     private String ciudad;
