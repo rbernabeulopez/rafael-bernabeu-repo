@@ -2,6 +2,9 @@ package com.example.block6pathvariableheaders;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
 
 @RestController
 public class UserController {
@@ -16,7 +19,10 @@ public class UserController {
     }
 
     @PutMapping("post")
-    String receiveParams(@RequestParam("var1") String var1, @RequestParam("var2") String var2) {
-        return "var1 = " + var1 + ", var2 = " + var2;
+    HashMap<String, String> receiveParams(@RequestParam("var1") String var1, @RequestParam("var2") String var2) {
+        HashMap<String, String> hashMap = new LinkedHashMap<>();
+        hashMap.put("var1", var1);
+        hashMap.put("var2", var2);
+        return hashMap;
     }
 }
