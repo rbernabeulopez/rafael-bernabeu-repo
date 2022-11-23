@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test" />
+    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +26,7 @@
         <entry key="$PROJECT_DIR$" value="8b5586f5c9726a41d5d3900f36be11f532e8546d" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/block6-person-controllers" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -60,7 +62,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "536c20db7aa3328b8bac000a8d5cda9c"
+    "spring.configuration.checksum": "ec8144b6c364d799df1b3cb0f0296e09"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -77,23 +79,43 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.block6personcontrollers" />
       <recent name="com.example.block6simplecontrollers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.block6personcontrollers" />
       <recent name="com.example.block5commandlinerunner" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UsuarioControllerTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="block-1-process-file-and-streams" />
-      <option name="PROGRAM_PARAMETERS" value="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block-1-process-file-and-streams\src\main\resources\peopleOK.csv" />
+  <component name="RunManager" selected="Spring Boot.Block6PersonControllersApplication">
+    <configuration name="Controlador1Test.addPersona" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="block6-person-controllers" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="com.example.block6personcontrollers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.example.block6personcontrollers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block6personcontrollers.Controlador1Test" />
+      <option name="METHOD_NAME" value="addPersona" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Controlador2Test.getPersona" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="block6-person-controllers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.block6personcontrollers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.block6personcontrollers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block6personcontrollers.Controlador2Test" />
+      <option name="METHOD_NAME" value="getPersona" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,32 +151,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsuarioControllerTest.saludar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="block6-simple-controllers" />
+    <configuration name="com.example.block6personcontrollers in block6-person-controllers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="block6-person-controllers" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.block6simplecontrollers.*" />
+          <option name="PATTERN" value="com.example.block6personcontrollers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.block6simplecontrollers" />
-      <option name="MAIN_CLASS_NAME" value="com.example.block6simplecontrollers.UsuarioControllerTest" />
-      <option name="METHOD_NAME" value="saludar" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Block5CommandLineRunnerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
-      <module name="block5-command-line-runner" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block5commandlinerunner.Block5CommandLineRunnerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.block5commandlinerunner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="com.example.block6personcontrollers" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -190,10 +196,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.Controlador1Test.addPersona" />
+      <item itemvalue="JUnit.Controlador2Test.getPersona" />
       <item itemvalue="JUnit.UsuarioControllerTest" />
       <item itemvalue="JUnit.UsuarioControllerTest.addEdad" />
-      <item itemvalue="JUnit.UsuarioControllerTest.saludar" />
+      <item itemvalue="JUnit.com.example.block6personcontrollers in block6-person-controllers" />
       <item itemvalue="Spring Boot.Block6PersonControllersApplication" />
       <item itemvalue="Spring Boot.Block6SimpleControllersApplication" />
       <item itemvalue="Spring Boot.Block5PropertiesApplication" />
@@ -201,15 +208,14 @@
       <item itemvalue="Spring Boot.Block5ProfilesApplication LOCAL" />
       <item itemvalue="Spring Boot.Block5ProfilesApplication INTEGRATION" />
       <item itemvalue="Spring Boot.Block5ProfilesApplication PRODUCTION" />
-      <item itemvalue="Spring Boot.Block5CommandLineRunnerApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Controlador2Test.getPersona" />
+        <item itemvalue="JUnit.com.example.block6personcontrollers in block6-person-controllers" />
+        <item itemvalue="JUnit.Controlador1Test.addPersona" />
         <item itemvalue="JUnit.UsuarioControllerTest" />
         <item itemvalue="JUnit.UsuarioControllerTest.addEdad" />
-        <item itemvalue="JUnit.UsuarioControllerTest.saludar" />
-        <item itemvalue="Spring Boot.Block5CommandLineRunnerApplication" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +229,8 @@
       <updated>1668667454821</updated>
       <workItem from="1668667456295" duration="5588000" />
       <workItem from="1669016997580" duration="14462000" />
-      <workItem from="1669101702669" duration="11807000" />
+      <workItem from="1669101702669" duration="16598000" />
+      <workItem from="1669188526614" duration="752000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
@@ -344,5 +351,26 @@
     <MESSAGE value="Finished properties exercise" />
     <MESSAGE value="Removed unused test" />
     <option name="LAST_COMMIT_MESSAGE" value="Removed unused test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/block6-person-controllers/src/main/java/com/example/block6personcontrollers/Controlador1.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/block6-person-controllers/src/main/java/com/example/block6personcontrollers/Controlador2.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.example.block6personcontrollers.Persona" memberName="nombre" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "c8e19f61-023f-4be8-8cc2-f4b2aca400d4",
+		"name": "Block6PersonControllers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24481989"
+	},
+	"item": [
+		{
+			"name": "Controlador1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "nombre",
+						"value": "Rafa",
+						"type": "text"
+					},
+					{
+						"key": "poblacion",
+						"value": "Alicante",
+						"type": "text"
+					},
+					{
+						"key": "edad",
+						"value": "19",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/controlador1/addPersona",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controlador1",
+						"addPersona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Controlador2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "nombre",
+						"value": "Rafa",
+						"type": "text"
+					},
+					{
+						"key": "poblacion",
+						"value": "Alicante",
+						"type": "text"
+					},
+					{
+						"key": "edad",
+						"value": "19",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/controlador2/getPersona",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controlador2",
+						"getPersona"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
