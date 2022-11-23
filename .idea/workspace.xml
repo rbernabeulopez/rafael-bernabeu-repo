@@ -230,7 +230,7 @@
       <workItem from="1668667456295" duration="5588000" />
       <workItem from="1669016997580" duration="14462000" />
       <workItem from="1669101702669" duration="16598000" />
-      <workItem from="1669188526614" duration="1728000" />
+      <workItem from="1669188526614" duration="3366000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
@@ -353,15 +353,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Removed unused test" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/block6-person-controllers/src/main/java/com/example/block6personcontrollers/Controlador1.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.example.block6personcontrollers.Persona" memberName="nombre" />

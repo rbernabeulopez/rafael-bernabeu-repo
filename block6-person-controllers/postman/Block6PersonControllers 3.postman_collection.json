@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "1fbb6be1-f4eb-4236-90e5-f07c6477bdfd",
+		"name": "Block6PersonControllers 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24481989"
+	},
+	"item": [
+		{
+			"name": "getPersonaByBeanName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/controlador/bean/bean1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controlador",
+						"bean",
+						"bean1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPersonaByBeanName 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/controlador/bean/bean2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controlador",
+						"bean",
+						"bean2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPersonaByBeanName 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/controlador/bean/bean3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controlador",
+						"bean",
+						"bean3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
