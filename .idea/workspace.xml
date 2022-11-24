@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/example/block7crud/infrastructure/controller/AddPersonaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/example/block7crud/infrastructure/controller/DeletePersonaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/example/block7crud/infrastructure/controller/ModifyPersonaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/example/block7crud/infrastructure/controller/RetrievePersonaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block7-crud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/block7-crud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block7-crud/src/main/java/com/example/block7crud/AddPersonaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/block7-crud/src/main/java/com/example/block7crud/DeletePersonaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/block7-crud/src/main/java/com/example/block7crud/ModifyPersonaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/block7-crud/src/main/java/com/example/block7crud/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/example/block7crud/domain/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block7-crud/src/main/java/com/example/block7crud/RetrievePersonaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/block7-crud/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/block7-crud/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -282,7 +265,7 @@
       <workItem from="1669101702669" duration="16598000" />
       <workItem from="1669188526614" duration="7072000" />
       <workItem from="1669195621443" duration="7801000" />
-      <workItem from="1669274503006" duration="16965000" />
+      <workItem from="1669274503006" duration="17311000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
