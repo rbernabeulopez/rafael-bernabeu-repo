@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block7-crud-validation/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/block7-crud-validation/HELP.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +30,7 @@
         <entry key="$PROJECT_DIR$" value="8b5586f5c9726a41d5d3900f36be11f532e8546d" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/block7-crud-validation" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -92,14 +94,14 @@
       <recent name="com.example.block6simplecontrollers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.block7crudvalidation.infrastructure.controller.dto" />
+      <recent name="com.example.block7crudvalidation.application" />
+      <recent name="com.example.block7crudvalidation.infrastructure.mapper" />
       <recent name="com.example.block7crud.infrastructure.repository" />
       <recent name="com.example.block7crud.application" />
-      <recent name="com.example.block7crud.controller.dto" />
-      <recent name="com.example.block7crud" />
-      <recent name="com.example.block6pathvariableheaders" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Block7CrudApplication">
+  <component name="RunManager" selected="Spring Boot.Block7CrudValidationApplication">
     <configuration name="Controlador1Test.addPersona" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="block6-person-controllers" />
       <extension name="coverage">
@@ -228,12 +230,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Block7CrudValidationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="block7-crud-validation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block7crudvalidation.Block7CrudValidationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.Controlador1Test.addPersona" />
       <item itemvalue="JUnit.Controlador2Test.getPersona" />
       <item itemvalue="JUnit.UsuarioControllerTest" />
       <item itemvalue="JUnit.UsuarioControllerTest.addEdad" />
       <item itemvalue="JUnit.com.example.block6personcontrollers in block6-person-controllers" />
+      <item itemvalue="Spring Boot.Block7CrudValidationApplication" />
       <item itemvalue="Spring Boot.Block5CommandLineRunnerApplication" />
       <item itemvalue="Spring Boot.Block7CrudApplication" />
       <item itemvalue="Spring Boot.Block6PathVariableHeadersApplication" />
@@ -269,7 +279,7 @@
       <workItem from="1669188526614" duration="7072000" />
       <workItem from="1669195621443" duration="7801000" />
       <workItem from="1669274503006" duration="17803000" />
-      <workItem from="1669359785727" duration="249000" />
+      <workItem from="1669359785727" duration="12547000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
@@ -392,6 +402,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="Removed unused test" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/block7-crud-validation/target/generated-sources/annotations/com/example/block7crudvalidation/infrastructure/mapper/PersonMapperImpl.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.example.block6personcontrollers.Persona" memberName="nombre" />

@@ -17,7 +17,7 @@
         <module name="block-1-process-file-and-streams" />
         <module name="block6-path-variable-headers" />
       </profile>
-      <profile name="Annotation profile for block7-crud" enabled="true">
+      <profile name="Annotation profile for block7-crud-validation" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -27,6 +27,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
         </processorPath>
+        <module name="block7-crud-validation" />
         <module name="block7-crud" />
       </profile>
     </annotationProcessing>
@@ -41,6 +42,7 @@
       <module name="block6-person-controllers" options="-parameters" />
       <module name="block6-simple-controllers" options="-parameters" />
       <module name="block7-crud" options="-parameters" />
+      <module name="block7-crud-validation" options="-parameters" />
     </option>
   </component>
 </project>
