@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,35 +45,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block7-crud/src/main/java/com/example/block7crud/infrastructure&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block7-crud&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;058b481b88e7b6ad16ef3e69c9459514&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_directory_selection": "C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block7-crud/src/main/java/com/example/block7crud/infrastructure",
+    "last_opened_file_path": "C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block7-crud-validation/src/main/java/com/example/block7crudvalidation/infrastructure",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "058b481b88e7b6ad16ef3e69c9459514"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block7-crud-validation\src\main\java\com\example\block7crudvalidation\infrastructure" />
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block5-profiles\src\main\resources" />
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block3-create-repo-git\PROYECTOGIT" />
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block-1-process-file-and-streams\src" />
@@ -94,11 +92,11 @@
       <recent name="com.example.block6simplecontrollers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.block7crudvalidation.domain.exception" />
       <recent name="com.example.block7crudvalidation.infrastructure.controller.dto" />
       <recent name="com.example.block7crudvalidation.application" />
       <recent name="com.example.block7crudvalidation.infrastructure.mapper" />
       <recent name="com.example.block7crud.infrastructure.repository" />
-      <recent name="com.example.block7crud.application" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Block7CrudValidationApplication">
@@ -279,7 +277,7 @@
       <workItem from="1669188526614" duration="7072000" />
       <workItem from="1669195621443" duration="7801000" />
       <workItem from="1669274503006" duration="17803000" />
-      <workItem from="1669359785727" duration="12547000" />
+      <workItem from="1669359785727" duration="13737000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
@@ -408,6 +406,11 @@
           <url>file://$PROJECT_DIR$/block7-crud-validation/target/generated-sources/annotations/com/example/block7crudvalidation/infrastructure/mapper/PersonMapperImpl.java</url>
           <line>15</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/block7-crud-validation/src/main/java/com/example/block7crudvalidation/application/PersonServiceImpl.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

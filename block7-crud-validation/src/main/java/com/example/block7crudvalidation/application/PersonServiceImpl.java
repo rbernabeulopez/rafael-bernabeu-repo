@@ -1,6 +1,8 @@
 package com.example.block7crudvalidation.application;
 
 import com.example.block7crudvalidation.domain.entity.Person;
+import com.example.block7crudvalidation.domain.exception.EntityNotFoundException;
+import com.example.block7crudvalidation.domain.exception.UnprocessableEntityException;
 import com.example.block7crudvalidation.domain.repository.PersonRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -17,24 +19,29 @@ public class PersonServiceImpl implements PersonService {
     private PersonRepository personRepository;
 
     private void validatePersonData(Person person) {
-        Objects.requireNonNull(person.getUser());
-        Objects.requireNonNull(person.getPassword());
-        Objects.requireNonNull(person.getName());
-        Objects.requireNonNull(person.getCompanyEmail());
-        Objects.requireNonNull(person.getPersonalEmail());
-        Objects.requireNonNull(person.getCity());
+        try {
+            Objects.requireNonNull(person.getUser(), "User cannot be null");
+            Objects.requireNonNull(person.getPassword(), "Password cannot be null");
+            Objects.requireNonNull(person.getName(), "Name cannot be null");
+            Objects.requireNonNull(person.getCompanyEmail(), "Company email cannot be null");
+            Objects.requireNonNull(person.getPersonalEmail(), "Personal email cannot be null");
+            Objects.requireNonNull(person.getCity(), "City cannot be null");
+        } catch (NullPointerException nullPointerException) {
+            throw new UnprocessableEntityException(nullPointerException.getMessage());
+        }
         if (person.getUser().length() > 10) {
-            throw new RuntimeException("User length cannot exceed 10 characters");
+            throw new UnprocessableEntityException("User length cannot exceed 10 characters");
         }
         if (person.getUser().length() < 6) {
-            throw new RuntimeException("User length cannot be less than 6 characters");
+            throw new UnprocessableEntityException("User length cannot be less than 6 characters");
         }
     }
 
     @Override
     public Person searchById(int id) {
         log.info("Searching user with given id {}", id);
-        return personRepository.findById(id).orElse(null);
+        return personRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Entity with id " + id + " not found"));
     }
 
     @Override
@@ -61,14 +68,17 @@ public class PersonServiceImpl implements PersonService {
     @Override
     public void deleteById(int id) {
         log.info("Deleting user with id {}", id);
+        this.searchById(id);
         personRepository.deleteById(id);
     }
 
     @Override
     public void updateById(int id, Person person) {
         log.info("Saving user with data {}", person);
+        Person personDB = this.searchById(id);
+
         validatePersonData(person);
-        Person personDB = searchById(id);
+
         person.setId(id);
         person.setCreatedDate(personDB.getCreatedDate());
         person.setActive(person.isActive());
