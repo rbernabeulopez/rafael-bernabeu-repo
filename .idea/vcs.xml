@@ -7,5 +7,6 @@
     <mapping directory="$PROJECT_DIR$/block6-path-variable-headers" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/block6-person-controllers" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/block6-simple-controllers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/block7-crud-validation" vcs="Git" />
   </component>
 </project>

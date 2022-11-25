@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/block6-person-controllers/pom.xml" />
         <option value="$PROJECT_DIR$/block6-path-variable-headers/pom.xml" />
         <option value="$PROJECT_DIR$/block7-crud/pom.xml" />
+        <option value="$PROJECT_DIR$/block7-crud-validation/pom.xml" />
       </list>
     </option>
   </component>

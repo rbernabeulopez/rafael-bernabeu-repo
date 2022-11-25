@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/block7-crud-validation/block7-crud-validation.iml" filepath="$PROJECT_DIR$/block7-crud-validation/block7-crud-validation.iml" />
       <module fileurl="file://$PROJECT_DIR$/rafael-bernabeu-repo.iml" filepath="$PROJECT_DIR$/rafael-bernabeu-repo.iml" />
     </modules>
   </component>
