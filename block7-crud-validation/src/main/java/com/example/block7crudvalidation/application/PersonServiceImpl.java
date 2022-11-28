@@ -41,7 +41,7 @@ public class PersonServiceImpl implements PersonService {
     public Person searchById(int id) {
         log.info("Searching user with given id {}", id);
         return personRepository.findById(id)
-                .orElseThrow(() -> new EntityNotFoundException("Entity with id " + id + " not found"));
+                .orElseThrow(() -> new EntityNotFoundException("Person with id " + id + " not found"));
     }
 
     @Override
