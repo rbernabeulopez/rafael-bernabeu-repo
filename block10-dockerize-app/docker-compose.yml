@@ -1,0 +1,21 @@
+version: "3.1"
+
+services:
+  postgresql:
+    image: postgres:alpine
+    environment:
+      - POSTGRES_PASSWORD=contrasena
+      - POSTGRES_DB=test
+    networks:
+      - mynetwork
+  block10-dockerize-app:
+    image: block10-dockerize-app
+    networks:
+      - mynetwork
+    ports:
+      - "8080:8080"
+    depends_on:
+    - postgresql
+networks:
+  mynetwork:
+    driver: bridge

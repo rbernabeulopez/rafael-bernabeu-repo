@@ -10,7 +10,6 @@
         <module name="block5-logging" />
         <module name="block5-command-line-runner" />
         <module name="block5-profiles" />
-        <module name="block10-dockerize-app" />
         <module name="block5-properties" />
         <module name="block6-simple-controllers" />
         <module name="block6-person-controllers" />
@@ -18,7 +17,7 @@
         <module name="block-1-process-file-and-streams" />
         <module name="block6-path-variable-headers" />
       </profile>
-      <profile name="Annotation profile for block7-crud-validation" enabled="true">
+      <profile name="Annotation profile for block10-dockerize-app" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -29,6 +28,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
         </processorPath>
         <module name="block7-crud-validation" />
+        <module name="block10-dockerize-app" />
         <module name="block7-crud" />
       </profile>
     </annotationProcessing>
