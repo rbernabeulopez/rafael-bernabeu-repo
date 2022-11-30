@@ -1,13 +1,17 @@
 package com.example.block7crudvalidation.domain.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 
 @Entity
-@Data
+@Getter
+@Setter
+@EqualsAndHashCode
 public class Person {
     @Id
     @GeneratedValue
@@ -44,4 +48,10 @@ public class Person {
 
     @Column(name = "termination_date")
     private LocalDate terminationDate;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Student student;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Professor professor;
 }

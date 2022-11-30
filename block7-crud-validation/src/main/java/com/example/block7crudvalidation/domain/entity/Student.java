@@ -1,14 +1,19 @@
 package com.example.block7crudvalidation.domain.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Data
+@Getter
+@Setter
+@EqualsAndHashCode
 public class Student {
     @Id
     @GeneratedValue(generator = "uuid")
@@ -16,7 +21,7 @@ public class Student {
     @Column(name = "student_id")
     private String studentId;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id")
     private Person person;
 
@@ -25,10 +30,13 @@ public class Student {
 
     private String comments;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "professor_id")
     private Professor professor;
 
     @Column(nullable = false)
     private String branch;
+
+    @OneToMany(mappedBy = "student")
+    private List<StudentsStudies> studies = new ArrayList<>();
 }

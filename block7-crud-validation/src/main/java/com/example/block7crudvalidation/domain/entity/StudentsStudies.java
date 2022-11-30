@@ -1,9 +1,10 @@
 package com.example.block7crudvalidation.domain.entity;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.Date;
@@ -11,7 +12,8 @@ import java.util.Date;
 @Entity
 @Getter
 @Setter
-@Table(name = "Alumnos_Estudios")
+@EqualsAndHashCode
+@Table(name = "Students_Studies")
 public class StudentsStudies {
     @Id
     @GeneratedValue(generator = "uuid")
@@ -19,7 +21,7 @@ public class StudentsStudies {
     @Column(name = "subject_id")
     private String subjectId;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "student_id")
     private Student student;
 

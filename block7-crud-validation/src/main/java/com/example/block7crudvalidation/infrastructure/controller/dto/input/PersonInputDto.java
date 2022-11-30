@@ -1,16 +1,11 @@
-package com.example.block7crudvalidation.infrastructure.controller.dto;
+package com.example.block7crudvalidation.infrastructure.controller.dto.input;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
-
 @Data
 @NoArgsConstructor
-public class PersonOutputDto {
-    private int id;
-
+public class PersonInputDto {
     private String user;
 
     private String name;
@@ -23,11 +18,7 @@ public class PersonOutputDto {
 
     private String city;
 
-    private boolean active;
-
-    private LocalDate createdDate;
-
     private String imageUrl;
 
-    private LocalDate terminationDate;
+    private String password;
 }

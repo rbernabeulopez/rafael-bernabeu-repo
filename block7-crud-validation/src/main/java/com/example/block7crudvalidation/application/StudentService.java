@@ -7,7 +7,8 @@ import java.util.List;
 public interface StudentService {
     Student searchById(String id);
     List<Student> searchAll();
-    void save(Student person, int personId);
+    void save(Student person, int personId, String professorId);
     void deleteById(String id);
     void updateById(String id, Student person);
+    void unassignStudies(List<String> studiesIds);
 }

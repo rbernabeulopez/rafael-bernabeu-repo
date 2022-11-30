@@ -2,8 +2,8 @@ package com.example.block7crudvalidation.infrastructure.controller;
 
 import com.example.block7crudvalidation.application.StudentService;
 import com.example.block7crudvalidation.domain.entity.Student;
-import com.example.block7crudvalidation.infrastructure.controller.dto.StudentInputDto;
-import com.example.block7crudvalidation.infrastructure.controller.dto.StudentOutputDto;
+import com.example.block7crudvalidation.infrastructure.controller.dto.input.StudentInputDto;
+import com.example.block7crudvalidation.infrastructure.controller.dto.output.StudentOutputDto;
 import com.example.block7crudvalidation.infrastructure.mapper.StudentMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -22,7 +22,7 @@ public class StudentController {
     @PostMapping
     public void save(@RequestBody StudentInputDto studentInputDto) {
         Student student = StudentMapper.INSTANCE.studentInputDtoToStudent(studentInputDto);
-        studentService.save(student, studentInputDto.getPersonId());
+        studentService.save(student, studentInputDto.getPersonId(), studentInputDto.getProfessorId());
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
@@ -50,5 +50,10 @@ public class StudentController {
     public List<StudentOutputDto> searchAll() {
         List<Student> students = studentService.searchAll();
         return students.stream().map(StudentMapper.INSTANCE::studentToStudentOutputDto).toList();
+    }
+
+    @PostMapping("unassign")
+    public void unasignStudies(List<String> studiesIds) {
+        studentService.unassignStudies(studiesIds);
     }
 }
