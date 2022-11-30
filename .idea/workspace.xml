@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -308,7 +307,7 @@
       <workItem from="1669724989202" duration="1150000" />
       <workItem from="1669793085227" duration="1174000" />
       <workItem from="1669794276927" duration="604000" />
-      <workItem from="1669794892850" duration="1650000" />
+      <workItem from="1669794892850" duration="2356000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
@@ -437,11 +436,6 @@
           <url>file://$PROJECT_DIR$/block7-crud-validation/target/generated-sources/annotations/com/example/block7crudvalidation/infrastructure/mapper/PersonMapperImpl.java</url>
           <line>15</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/block7-crud-validation/src/main/java/com/example/block7crudvalidation/application/StudentServiceImpl.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
