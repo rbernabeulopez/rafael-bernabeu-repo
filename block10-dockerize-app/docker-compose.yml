@@ -3,6 +3,7 @@ version: "3.1"
 services:
   postgresql:
     image: postgres:alpine
+    container_name: postgres_test
     environment:
       - POSTGRES_PASSWORD=contrasena
       - POSTGRES_DB=test
