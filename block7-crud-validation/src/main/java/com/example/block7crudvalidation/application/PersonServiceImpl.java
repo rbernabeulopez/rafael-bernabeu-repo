@@ -26,6 +26,7 @@ public class PersonServiceImpl implements PersonService {
             Objects.requireNonNull(person.getCompanyEmail(), "Company email cannot be null");
             Objects.requireNonNull(person.getPersonalEmail(), "Personal email cannot be null");
             Objects.requireNonNull(person.getCity(), "City cannot be null");
+            Objects.requireNonNull(person.getCreatedDate(), "Creation date cannot be null");
         } catch (NullPointerException nullPointerException) {
             throw new UnprocessableEntityException(nullPointerException.getMessage());
         }
@@ -60,8 +61,6 @@ public class PersonServiceImpl implements PersonService {
     public void save(Person person) {
         log.info("Saving user with data {}", person);
         validatePersonData(person);
-        person.setCreatedDate(LocalDate.now());
-        person.setActive(false);
         personRepository.save(person);
     }
 

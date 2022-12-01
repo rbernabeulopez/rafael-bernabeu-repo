@@ -15,7 +15,6 @@ import java.util.List;
 import java.util.Objects;
 
 @RestController
-@RequestMapping("person")
 @AllArgsConstructor
 public class PersonController {
     private PersonService personService;
@@ -29,45 +28,45 @@ public class PersonController {
     }
 
     @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping
+    @PostMapping("addperson")
     public void save(@RequestBody PersonInputDto personInputDto) {
         Person person = PersonMapper.INSTANCE.personInputDtoToPerson(personInputDto);
         personService.save(person);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    @DeleteMapping("{id}")
+    @DeleteMapping("person/{id}")
     public void deleteById(@PathVariable int id) {
         personService.deleteById(id);
     }
 
-    @PutMapping("{id}")
+    @PutMapping("person/{id}")
     public void modifyById(@PathVariable int id, @RequestBody PersonInputDto personInputDto) {
         Person person = PersonMapper.INSTANCE.personInputDtoToPerson(personInputDto);
         personService.updateById(id, person);
     }
 
-    @GetMapping("{id}")
+    @GetMapping("person/{id}")
     public PersonOutputDto searchById(@PathVariable int id,
           @RequestParam(value = "ouputType", defaultValue = "simple") String ouputType) {
         Person person = personService.searchById(id);
         return getPersonOutputDto(person, ouputType);
     }
 
-    @GetMapping("/name")
+    @GetMapping("person/name")
     public List<PersonOutputDto> searchByName(@RequestParam("name") String name,
           @RequestParam(value = "ouputType", defaultValue = "simple") String ouputType) {
         List<Person> persons = personService.searchByName(name);
         return persons.stream().map(person -> getPersonOutputDto(person, ouputType)).toList();
     }
 
-    @GetMapping
+    @GetMapping("getall")
     public List<PersonOutputDto> searchAll(@RequestParam(value = "ouputType", defaultValue = "simple") String ouputType) {
         List<Person> persons = personService.searchAll();
         return persons.stream().map(person -> getPersonOutputDto(person, ouputType)).toList();
     }
 
-    @GetMapping("/professor/{id}")
+    @GetMapping("person/professor/{id}")
     ProfessorOutputDto getProfessor(@PathVariable String id) {
         return professorFeign.searchById(id, "simple");
     }

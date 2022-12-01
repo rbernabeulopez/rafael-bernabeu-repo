@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test" />
+    <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,7 +65,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "File.Encoding",
-    "spring.configuration.checksum": "cfa6093927177857e7fff4add20345de"
+    "spring.configuration.checksum": "be53c07b91cc020c72f5a97b53586fb0"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -107,7 +109,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Block10DockerizeAppApplication">
+  <component name="RunManager" selected="Spring Boot.Block7CrudValidationApplication 8080">
     <configuration name="Controlador1Test.addPersona" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="block6-person-controllers" />
       <extension name="coverage">
@@ -303,7 +305,8 @@
       <workItem from="1669794276927" duration="604000" />
       <workItem from="1669794892850" duration="3859000" />
       <workItem from="1669802123448" duration="417000" />
-      <workItem from="1669806138191" duration="5238000" />
+      <workItem from="1669806138191" duration="5352000" />
+      <workItem from="1669881068337" duration="9054000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>
@@ -432,6 +435,11 @@
           <url>file://$PROJECT_DIR$/block7-crud-validation/target/generated-sources/annotations/com/example/block7crudvalidation/infrastructure/mapper/PersonMapperImpl.java</url>
           <line>15</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/block10-dockerize-app/src/main/java/com/example/block10dockerizeapp/infrastructure/controller/AddPersonaController.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
