@@ -17,7 +17,7 @@
         <module name="block-1-process-file-and-streams" />
         <module name="block6-path-variable-headers" />
       </profile>
-      <profile name="Annotation profile for block10-dockerize-app" enabled="true">
+      <profile name="Annotation profile for block11-upload-download-files" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -29,6 +29,7 @@
         </processorPath>
         <module name="block7-crud-validation" />
         <module name="block10-dockerize-app" />
+        <module name="block11-upload-download-files" />
         <module name="block7-crud" />
       </profile>
     </annotationProcessing>
@@ -36,6 +37,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="block10-dockerize-app" options="-parameters" />
+      <module name="block11-upload-download-files" options="-parameters" />
       <module name="block5-command-line-runner" options="-parameters" />
       <module name="block5-logging" options="-parameters" />
       <module name="block5-profiles" options="-parameters" />
