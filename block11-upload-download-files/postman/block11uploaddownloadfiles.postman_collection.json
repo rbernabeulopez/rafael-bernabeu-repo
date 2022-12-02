@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "1f9c751f-434b-427f-886d-012325ddb237",
+		"name": "block11uploaddownloadfiles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24481989"
+	},
+	"item": [
+		{
+			"name": "Save file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/rafael.bernabeu/Downloads/Plan estudios Java.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/file",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save file 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/rafael.bernabeu/Downloads/3f1baa97-6229-424e-ac74-ced5d21ea2ad"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download file by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/file/102",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"102"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download file by Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/file/name/Plan estudios Java.docx",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"name",
+						"Plan estudios Java.docx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Path",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/setPath?path=upload-dir2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"setPath"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "upload-dir2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
