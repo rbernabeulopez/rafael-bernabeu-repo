@@ -10,14 +10,16 @@
         <module name="block5-logging" />
         <module name="block5-command-line-runner" />
         <module name="block5-profiles" />
+        <module name="block12-kafka-producer" />
         <module name="block5-properties" />
         <module name="block6-simple-controllers" />
         <module name="block6-person-controllers" />
+        <module name="block12-kafka-consumer" />
         <module name="block3-maven-package" />
         <module name="block-1-process-file-and-streams" />
         <module name="block6-path-variable-headers" />
       </profile>
-      <profile name="Annotation profile for block11-upload-download-files" enabled="true">
+      <profile name="Annotation profile for block7-crud" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -29,15 +31,20 @@
         </processorPath>
         <module name="block7-crud-validation" />
         <module name="block10-dockerize-app" />
-        <module name="block11-upload-download-files" />
         <module name="block7-crud" />
+        <module name="block11-upload-download-files" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="block12-kafka" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="block10-dockerize-app" options="-parameters" />
       <module name="block11-upload-download-files" options="-parameters" />
+      <module name="block12-kafka-consumer" options="-parameters" />
+      <module name="block12-kafka-producer" options="-parameters" />
       <module name="block5-command-line-runner" options="-parameters" />
       <module name="block5-logging" options="-parameters" />
       <module name="block5-profiles" options="-parameters" />

@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2582235-fc87-4cca-b094-8b85344df113" name="Changes" comment="Removed unused test">
+      <change afterPath="$PROJECT_DIR$/block12-kafka/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block12-kafka/block12-kafka-producer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block12-kafka/block12-kafka-producer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block12-kafka/block12-kafka-producer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block12-kafka/block12-kafka-producer/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block12-kafka/block12-kafka-producer/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block12-kafka/block12-kafka-producer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block12-kafka/block12-kafka-producer/src/main/java/com/example/block12kafkaproducer/Block12kafkaProducerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block12-kafka/block12-kafka-producer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block12-kafka/block12-kafka-producer/src/test/java/com/example/block12kafkaproducer/Block12kafkaProducerApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block11-upload-download-files/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/block11-upload-download-files/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block11-upload-download-files/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/block11-upload-download-files/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,14 +72,14 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "temurin-17",
-    "last_directory_selection": "C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block7-crud/src/main/java/com/example/block7crud/infrastructure",
-    "last_opened_file_path": "C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block11-upload-download-files/src/main/java/com/example/block11uploaddownloadfiles/infrastructure",
+    "last_directory_selection": "C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block12-kafka/block12-kafka-producer/src/main/java/com/example/block12kafkaproducer/infrastructure",
+    "last_opened_file_path": "C:/Users/rafael.bernabeu/IdeaProjects/rafael-bernabeu-repo/block12-kafka/block12-kafka-producer/src/main/java/com/example/block12kafkaproducer",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "spring.configuration.checksum": "be53c07b91cc020c72f5a97b53586fb0"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "6bde51362f054e8e184996b81c2d47c3"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -84,11 +90,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block12-kafka\block12-kafka-producer\src\main\java\com\example\block12kafkaproducer" />
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block11-upload-download-files\src\main\java\com\example\block11uploaddownloadfiles\infrastructure" />
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block11-upload-download-files" />
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block10-dockerize-app\src\main\java\com\example\block10dockerizeapp" />
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block7-crud-validation\src\main\java\com\example\block7crudvalidation\application" />
-      <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block7-crud-validation\src\main\java\com\example\block7crudvalidation\infrastructure" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rafael.bernabeu\IdeaProjects\rafael-bernabeu-repo\block5-logging\src\main\resources" />
@@ -103,11 +109,11 @@
       <recent name="com.example.block6simplecontrollers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.block12kafkaproducer.domain" />
       <recent name="com.example.block11uploaddownloadfiles.domain.exception" />
       <recent name="com.example.block11uploaddownloadfiles.infrastructure.dto" />
       <recent name="com.example.block11uploaddownloadfiles.domain.repository" />
       <recent name="com.example.block11uploaddownloadfiles.application" />
-      <recent name="com.example.block11uploaddownloadfiles.domain.entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -117,23 +123,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Block11UploadDownloadFilesApplication">
-    <configuration name="Controlador1Test.addPersona" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="block6-person-controllers" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.block6personcontrollers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.block6personcontrollers" />
-      <option name="MAIN_CLASS_NAME" value="com.example.block6personcontrollers.Controlador1Test" />
-      <option name="METHOD_NAME" value="addPersona" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.Block12kafkaProducerApplication 8082">
     <configuration name="Controlador2Test.getPersona" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="block6-person-controllers" />
       <extension name="coverage">
@@ -150,20 +140,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.example.block6personcontrollers in block6-person-controllers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="block6-person-controllers" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.block6personcontrollers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.block6personcontrollers" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Block10DockerizeAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="block10-dockerize-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block10dockerizeapp.Block10DockerizeAppApplication" />
@@ -176,6 +152,45 @@
       <module name="block11-upload-download-files" />
       <option name="PROGRAM_PARAMETERS" value="upload-dir" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block11uploaddownloadfiles.Block11UploadDownloadFilesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Block12KafkaConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="block12-kafka-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block12kafkaconsumer.Block12KafkaConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Block12kafkaProducerApplication 8082" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <envs>
+        <env name="server.port" value="8082" />
+      </envs>
+      <module name="block12-kafka-producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block12kafkaproducer.Block12kafkaProducerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.block12kafkaproducer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Block12kafkaProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="block12-kafka-producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.block12kafkaproducer.Block12kafkaProducerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.block12kafkaproducer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -270,12 +285,21 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="block12-kafka: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="block12-kafka/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.block12-kafka: Compose Deployment" />
       <item itemvalue="Docker.block10-dockerize-app/Dockerfile" />
       <item itemvalue="Docker.block10-dockerize-app: Compose Deployment" />
-      <item itemvalue="JUnit.Controlador1Test.addPersona" />
       <item itemvalue="JUnit.Controlador2Test.getPersona" />
-      <item itemvalue="JUnit.com.example.block6personcontrollers in block6-person-controllers" />
+      <item itemvalue="Spring Boot.Block12kafkaProducerApplication 8082" />
+      <item itemvalue="Spring Boot.Block12KafkaConsumerApplication" />
       <item itemvalue="Spring Boot.Block11UploadDownloadFilesApplication" />
       <item itemvalue="Spring Boot.Block10DockerizeAppApplication" />
       <item itemvalue="Spring Boot.Block7CrudValidationApplication 8080" />
@@ -290,14 +314,15 @@
       <item itemvalue="Spring Boot.Block5ProfilesApplication LOCAL" />
       <item itemvalue="Spring Boot.Block5ProfilesApplication INTEGRATION" />
       <item itemvalue="Spring Boot.Block5ProfilesApplication PRODUCTION" />
+      <item itemvalue="Spring Boot.Block12kafkaProducerApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Block12kafkaProducerApplication" />
+        <item itemvalue="Docker.block12-kafka: Compose Deployment" />
         <item itemvalue="Docker.block10-dockerize-app/Dockerfile" />
         <item itemvalue="Docker.block10-dockerize-app: Compose Deployment" />
         <item itemvalue="JUnit.Controlador2Test.getPersona" />
-        <item itemvalue="JUnit.com.example.block6personcontrollers in block6-person-controllers" />
-        <item itemvalue="JUnit.Controlador1Test.addPersona" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +350,9 @@
       <workItem from="1669802123448" duration="417000" />
       <workItem from="1669806138191" duration="5352000" />
       <workItem from="1669881068337" duration="11685000" />
-      <workItem from="1669966244374" duration="9237000" />
+      <workItem from="1669966244374" duration="12124000" />
+      <workItem from="1670225079972" duration="4114000" />
+      <workItem from="1670229424397" duration="8366000" />
     </task>
     <task id="LOCAL-00001" summary="Created .gitignore">
       <created>1668671616269</created>

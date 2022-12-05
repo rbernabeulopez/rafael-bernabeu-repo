@@ -18,6 +18,9 @@
         <option value="$PROJECT_DIR$/block7-crud-validation/pom.xml" />
         <option value="$PROJECT_DIR$/block10-dockerize-app/pom.xml" />
         <option value="$PROJECT_DIR$/block11-upload-download-files/pom.xml" />
+        <option value="$PROJECT_DIR$/block12-kafka/block12kafka-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/block12-kafka/block12-kafka-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/block12-kafka/block12-kafka-producer/pom.xml" />
       </list>
     </option>
   </component>

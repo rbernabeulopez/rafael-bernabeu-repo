@@ -1,0 +1,32 @@
+{
+	"info": {
+		"_postman_id": "e5c45a5e-2b46-49b4-b6e5-26df5c32c773",
+		"name": "block12-kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24481989"
+	},
+	"item": [
+		{
+			"name": "Send message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Hola kafka"
+				},
+				"url": {
+					"raw": "localhost:8081/message",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"message"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
