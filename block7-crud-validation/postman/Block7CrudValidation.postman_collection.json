@@ -45,6 +45,99 @@
 			"response": []
 		},
 		{
+			"name": "Find All Persona Paginated",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/person/paginated?offset=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"paginated"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Persona By Fields",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/person/fields?name=rbl&user=Rafael&surname=Ortuño&creationDate=2021-09-12&orderBy=name",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"fields"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "rbl"
+						},
+						{
+							"key": "user",
+							"value": "Rafael"
+						},
+						{
+							"key": "surname",
+							"value": "Ortuño"
+						},
+						{
+							"key": "creationDate",
+							"value": "2021-09-12"
+						},
+						{
+							"key": "orderBy",
+							"value": "name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Find All Student",
 			"event": [
 				{
@@ -395,7 +488,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"city\": \"Alicante\",\r\n    \"companyEmail\": \"company@mail.com\",\r\n    \"imageUrl\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUxm0Ig3QDrzXliFv2rNg0oLr0KH0RssgWtJ8kwvL8A&s\",\r\n    \"user\": \"Rafael\",\r\n    \"personalEmail\": \"personal@mail.com\",\r\n    \"surname\": \"Ortuño\",\r\n    \"name\": \"rbl\",\r\n    \"password\": \"1234\"\r\n}",
+					"raw": "{\r\n    \"city\": \"Alicante\",\r\n    \"company_email\": \"company@mail.com\",\r\n    \"imagen_url\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUxm0Ig3QDrzXliFv2rNg0oLr0KH0RssgWtJ8kwvL8A&s\",\r\n    \"usuario\": \"Rafael\",\r\n    \"personal_email\": \"personal@mail.com\",\r\n    \"surname\": \"Ortuño\",\r\n    \"name\": \"rbl\",\r\n    \"password\": \"1234\",\r\n    \"created_date\": \"2022-09-12\",\r\n    \"termination_date\": \"2023-10-05\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -403,13 +496,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/person",
+					"raw": "localhost:8080/addperson",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"person"
+						"addperson"
 					]
 				}
 			},

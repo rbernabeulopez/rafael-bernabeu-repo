@@ -8,9 +8,12 @@ import com.example.block7crudvalidation.infrastructure.controller.dto.output.Pro
 import com.example.block7crudvalidation.infrastructure.feign.ProfessorFeign;
 import com.example.block7crudvalidation.infrastructure.mapper.PersonMapper;
 import lombok.AllArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
 
@@ -24,7 +27,7 @@ public class PersonController {
     private PersonOutputDto getPersonOutputDto(Person person, String ouputType) {
         return (Objects.equals(ouputType, "simple")) ? PersonMapper.INSTANCE.personToPersonOutputDto(person) :
                 (Objects.equals(ouputType, "full")) ? PersonMapper.INSTANCE.personToPersonFullOutputDto(person) :
-                null;
+                new PersonOutputDto();
     }
 
     @ResponseStatus(HttpStatus.CREATED)
@@ -69,5 +72,22 @@ public class PersonController {
     @GetMapping("person/professor/{id}")
     ProfessorOutputDto getProfessor(@PathVariable String id) {
         return professorFeign.searchById(id, "simple");
+    }
+
+    @GetMapping("person/fields")
+    public List<PersonOutputDto> searchByFields(@RequestParam(name = "user", required = false) String user,
+            @RequestParam(name = "name", required = false) String name,
+            @RequestParam(name = "surname", required = false) String surname,
+            @RequestParam(name = "creationDate", required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate creationDate,
+            @RequestParam(name = "orderBy", defaultValue = "user", required = false) String orderBy) {
+        List<Person> persons = personService.searchByFields(user, name, surname, creationDate, orderBy);
+        return persons.stream().map(person -> getPersonOutputDto(person, "simple")).toList();
+    }
+
+    @GetMapping("person/paginated")
+    public Page<PersonOutputDto> searchAllWithPagination(@RequestParam(value = "offset") int offset,
+            @RequestParam(value = "pageSize", defaultValue = "10") int pageSize) {
+        Page<Person> persons = personService.searchAllWithPagination(offset, pageSize);
+        return persons.map(person -> getPersonOutputDto(person, "simple"));
     }
 }
