@@ -91,8 +91,6 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public void unassignStudies(List<String> studiesIds) {
-        studiesIds.forEach(studyId -> {
-            studentsStudiesRepository.deleteById(studyId);
-        });
+        studiesIds.forEach(studentsStudiesRepository::deleteById);
     }
 }

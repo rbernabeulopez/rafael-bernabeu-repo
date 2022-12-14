@@ -7,7 +7,6 @@ import java.util.Date;
 @Data
 public class StudentsStudiesOutputDto {
     private String subjectId;
-    //private StudentOutputDto student;
     private String subject;
     private String comments;
     private Date initialDate;

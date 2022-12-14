@@ -4,6 +4,7 @@ import com.example.block7crudvalidation.application.StudentService;
 import com.example.block7crudvalidation.domain.entity.Student;
 import com.example.block7crudvalidation.infrastructure.controller.dto.input.StudentInputDto;
 import com.example.block7crudvalidation.infrastructure.controller.dto.output.StudentOutputDto;
+import com.example.block7crudvalidation.infrastructure.mapper.ProfessorMapper;
 import com.example.block7crudvalidation.infrastructure.mapper.StudentMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -41,9 +42,11 @@ public class StudentController {
     public StudentOutputDto searchById(@PathVariable String id,
            @RequestParam(value = "ouputType", defaultValue = "simple") String ouputType) {
         Student student = studentService.searchById(id);
-        return (Objects.equals(ouputType, "simple")) ? StudentMapper.INSTANCE.studentToStudentOutputDto(student) :
-                (Objects.equals(ouputType, "full")) ? StudentMapper.INSTANCE.studentToStudentFullOutputDto(student) :
-                null;
+        if (Objects.equals(ouputType, "simple")) {
+            return StudentMapper.INSTANCE.studentToStudentOutputDto(student);
+        }
+        return (Objects.equals(ouputType, "full")) ? StudentMapper.INSTANCE.studentToStudentFullOutputDto(student) :
+                new StudentOutputDto();
     }
 
     @GetMapping

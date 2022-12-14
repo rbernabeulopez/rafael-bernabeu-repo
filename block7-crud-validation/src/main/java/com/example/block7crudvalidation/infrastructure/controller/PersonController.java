@@ -24,9 +24,14 @@ public class PersonController {
 
     private ProfessorFeign professorFeign;
 
+    private static final String SIMPLE_OUTPUT = "simple";
+    private static final String FULL_OUTPUT = "full";
+
     private PersonOutputDto getPersonOutputDto(Person person, String ouputType) {
-        return (Objects.equals(ouputType, "simple")) ? PersonMapper.INSTANCE.personToPersonOutputDto(person) :
-                (Objects.equals(ouputType, "full")) ? PersonMapper.INSTANCE.personToPersonFullOutputDto(person) :
+        if(Objects.equals(ouputType, SIMPLE_OUTPUT)) {
+            return PersonMapper.INSTANCE.personToPersonOutputDto(person);
+        }
+        return (Objects.equals(ouputType, FULL_OUTPUT)) ? PersonMapper.INSTANCE.personToPersonFullOutputDto(person) :
                 new PersonOutputDto();
     }
 
@@ -51,27 +56,27 @@ public class PersonController {
 
     @GetMapping("person/{id}")
     public PersonOutputDto searchById(@PathVariable int id,
-          @RequestParam(value = "ouputType", defaultValue = "simple") String ouputType) {
+          @RequestParam(value = "ouputType", defaultValue = SIMPLE_OUTPUT) String ouputType) {
         Person person = personService.searchById(id);
         return getPersonOutputDto(person, ouputType);
     }
 
     @GetMapping("person/name")
     public List<PersonOutputDto> searchByName(@RequestParam("name") String name,
-          @RequestParam(value = "ouputType", defaultValue = "simple") String ouputType) {
+          @RequestParam(value = "ouputType", defaultValue = SIMPLE_OUTPUT) String ouputType) {
         List<Person> persons = personService.searchByName(name);
         return persons.stream().map(person -> getPersonOutputDto(person, ouputType)).toList();
     }
 
     @GetMapping("getall")
-    public List<PersonOutputDto> searchAll(@RequestParam(value = "ouputType", defaultValue = "simple") String ouputType) {
+    public List<PersonOutputDto> searchAll(@RequestParam(value = "ouputType", defaultValue = SIMPLE_OUTPUT) String ouputType) {
         List<Person> persons = personService.searchAll();
         return persons.stream().map(person -> getPersonOutputDto(person, ouputType)).toList();
     }
 
     @GetMapping("person/professor/{id}")
     ProfessorOutputDto getProfessor(@PathVariable String id) {
-        return professorFeign.searchById(id, "simple");
+        return professorFeign.searchById(id, SIMPLE_OUTPUT);
     }
 
     @GetMapping("person/fields")
@@ -81,13 +86,13 @@ public class PersonController {
             @RequestParam(name = "creationDate", required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate creationDate,
             @RequestParam(name = "orderBy", defaultValue = "user", required = false) String orderBy) {
         List<Person> persons = personService.searchByFields(user, name, surname, creationDate, orderBy);
-        return persons.stream().map(person -> getPersonOutputDto(person, "simple")).toList();
+        return persons.stream().map(person -> getPersonOutputDto(person, SIMPLE_OUTPUT)).toList();
     }
 
     @GetMapping("person/paginated")
     public Page<PersonOutputDto> searchAllWithPagination(@RequestParam(value = "offset") int offset,
             @RequestParam(value = "pageSize", defaultValue = "10") int pageSize) {
         Page<Person> persons = personService.searchAllWithPagination(offset, pageSize);
-        return persons.map(person -> getPersonOutputDto(person, "simple"));
+        return persons.map(person -> getPersonOutputDto(person, SIMPLE_OUTPUT));
     }
 }

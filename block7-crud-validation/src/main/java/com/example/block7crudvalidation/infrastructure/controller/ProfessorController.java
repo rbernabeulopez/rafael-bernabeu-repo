@@ -42,8 +42,10 @@ public class ProfessorController {
     public ProfessorOutputDto searchById(@PathVariable String id,
                                                         @RequestParam(value = "ouputType", defaultValue = "simple") String ouputType) {
         Professor professor = professorService.searchById(id);
-        return (Objects.equals(ouputType, "simple")) ? ProfessorMapper.INSTANCE.professorToProfessorOutputDto(professor) :
-                (Objects.equals(ouputType, "full")) ? ProfessorMapper.INSTANCE.professorToProfessorFullOutputDto(professor) :
+        if (Objects.equals(ouputType, "simple")) {
+           return ProfessorMapper.INSTANCE.professorToProfessorOutputDto(professor);
+        }
+        return (Objects.equals(ouputType, "full")) ? ProfessorMapper.INSTANCE.professorToProfessorFullOutputDto(professor) :
                 new ProfessorOutputDto();
     }
 
