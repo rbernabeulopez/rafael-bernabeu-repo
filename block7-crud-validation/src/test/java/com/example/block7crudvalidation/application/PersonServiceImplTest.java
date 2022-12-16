@@ -221,10 +221,6 @@ class PersonServiceImplTest {
     }
 
     @Test
-    void searchByFields() {
-    }
-
-    @Test
     void searchAllWithPagination() {
         // GIVEN
         int offset = 0;

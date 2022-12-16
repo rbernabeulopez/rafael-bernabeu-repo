@@ -9,7 +9,12 @@ public class UnprocessableEntityException extends RuntimeException {
 
     @Override
     public boolean equals(Object obj) {
-        return obj instanceof UnprocessableEntityException &&
-            Objects.equals(((UnprocessableEntityException) obj).getMessage(), this.getMessage());
+        return obj instanceof UnprocessableEntityException unprocessableEntityException &&
+            Objects.equals(unprocessableEntityException.getMessage(), this.getMessage());
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 }

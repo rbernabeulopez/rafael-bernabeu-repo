@@ -1,17 +1,10 @@
 package com.example.block7crudvalidation;
 
 import com.example.block7crudvalidation.domain.entity.Person;
-import com.example.block7crudvalidation.domain.entity.Person;
-import com.example.block7crudvalidation.domain.exception.EntityNotFoundException;
 import com.example.block7crudvalidation.domain.repository.PersonRepository;
-import com.example.block7crudvalidation.domain.repository.PersonRepository;
-import com.example.block7crudvalidation.infrastructure.controller.dto.input.PersonInputDto;
 import com.example.block7crudvalidation.infrastructure.controller.dto.input.PersonInputDto;
 import com.example.block7crudvalidation.infrastructure.controller.dto.output.PersonFullOutputDto;
 import com.example.block7crudvalidation.infrastructure.controller.dto.output.PersonOutputDto;
-import com.example.block7crudvalidation.infrastructure.controller.dto.output.PersonFullOutputDto;
-import com.example.block7crudvalidation.infrastructure.controller.dto.output.PersonOutputDto;
-import com.example.block7crudvalidation.infrastructure.mapper.PersonMapper;
 import com.example.block7crudvalidation.infrastructure.mapper.PersonMapper;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -36,7 +29,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class PersonTest {
+class PersonTest {
     @Autowired
     private PersonRepository personRepository;
 
@@ -238,7 +231,7 @@ public class PersonTest {
                 .andExpect(status().isNoContent());
 
         // THEN
-        assertThat(personRepository.findAll().size()).isZero();
+        assertThat(personRepository.findAll()).isEmpty();
     }
 
 

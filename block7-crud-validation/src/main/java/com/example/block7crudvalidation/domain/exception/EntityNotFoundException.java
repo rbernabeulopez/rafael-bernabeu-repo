@@ -9,7 +9,12 @@ public class EntityNotFoundException extends RuntimeException {
 
     @Override
     public boolean equals(Object obj) {
-        return obj instanceof EntityNotFoundException &&
-                Objects.equals(((EntityNotFoundException) obj).getMessage(), this.getMessage());
+        return obj instanceof EntityNotFoundException entitynotfoundexception &&
+                Objects.equals(entitynotfoundexception.getMessage(), this.getMessage());
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 }
