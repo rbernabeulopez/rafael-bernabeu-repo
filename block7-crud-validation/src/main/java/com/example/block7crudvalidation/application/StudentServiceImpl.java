@@ -66,7 +66,7 @@ public class StudentServiceImpl implements StudentService {
         professor.setStudents(students);
 
         studentRepository.save(student);
-        professorService.updateById(professorId, professor);
+        professorService.updateById(professorId, professor, professor.getPerson().getId());
     }
 
     @Override

@@ -1,18 +1,20 @@
 package com.example.block7crudvalidation.domain.entity;
 
 import javax.persistence.*;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Getter
 @Setter
-@EqualsAndHashCode
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Professor {
     @Id
     @GeneratedValue(generator = "uuid")
@@ -29,6 +31,6 @@ public class Professor {
     @Column(nullable = false)
     private String branch;
 
-    @OneToMany(mappedBy = "professor")
+    @OneToMany(mappedBy = "professor", fetch = FetchType.EAGER)
     private List<Student> students = new ArrayList<>();
 }

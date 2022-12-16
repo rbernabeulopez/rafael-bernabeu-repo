@@ -2,9 +2,7 @@ package com.example.block7crudvalidation.domain.entity;
 
 import javax.persistence.*;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.ArrayList;
@@ -14,6 +12,9 @@ import java.util.List;
 @Getter
 @Setter
 @EqualsAndHashCode
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Student {
     @Id
     @GeneratedValue(generator = "uuid")

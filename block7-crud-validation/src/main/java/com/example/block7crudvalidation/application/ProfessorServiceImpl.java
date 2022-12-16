@@ -74,12 +74,16 @@ public class ProfessorServiceImpl implements ProfessorService {
     }
 
     @Override
-    public void updateById(String id, Professor professor) {
+    public void updateById(String id, Professor professor, int personId) {
         log.info("Saving professor with data {}", professor);
         this.searchById(id);
+        Person person = personService.searchById(personId);
 
         validateProfessorData(professor);
 
+        professor.setProfessorId(id);
+        professor.setPerson(person);
+        person.setProfessor(professor);
         professorRepository.save(professor);
     }
 }

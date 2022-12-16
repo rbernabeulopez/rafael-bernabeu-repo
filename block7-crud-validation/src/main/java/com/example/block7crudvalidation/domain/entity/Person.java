@@ -2,10 +2,7 @@ package com.example.block7crudvalidation.domain.entity;
 
 import javax.persistence.*;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.time.LocalDate;
 
@@ -14,6 +11,9 @@ import java.time.LocalDate;
 @Setter
 @EqualsAndHashCode
 @ToString
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Person {
     @Id
     @GeneratedValue

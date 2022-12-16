@@ -7,7 +7,6 @@ import com.example.block7crudvalidation.infrastructure.controller.dto.output.Pro
 import com.example.block7crudvalidation.infrastructure.mapper.ProfessorMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,7 +34,7 @@ public class ProfessorController {
     @PutMapping("{id}")
     public void modifyById(@PathVariable String id, @RequestBody ProfessorInputDto professorInputDto) {
         Professor professor = ProfessorMapper.INSTANCE.professorInputDtoToProfessor(professorInputDto);
-        professorService.updateById(id, professor);
+        professorService.updateById(id, professor, professorInputDto.getPersonId());
     }
 
     @GetMapping("{id}")
