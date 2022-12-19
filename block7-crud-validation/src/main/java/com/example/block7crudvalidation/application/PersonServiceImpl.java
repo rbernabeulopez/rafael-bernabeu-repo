@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
@@ -26,6 +27,7 @@ import java.util.Objects;
 @Slf4j
 public class PersonServiceImpl implements PersonService {
     private PersonRepository personRepository;
+    private PasswordEncoder passwordEncoder;
 
     @PersistenceContext
     private EntityManager entityManager;
@@ -47,6 +49,9 @@ public class PersonServiceImpl implements PersonService {
         }
         if (person.getUser().length() < 6) {
             throw new UnprocessableEntityException("User length cannot be less than 6 characters");
+        }
+        if(personRepository.findByUser(person.getUser()).size() >= 1) {
+            throw new UnprocessableEntityException("User already exists");
         }
     }
 
@@ -73,6 +78,7 @@ public class PersonServiceImpl implements PersonService {
     public void save(Person person) {
         log.info("Saving user with data {}", person);
         validatePersonData(person);
+        person.setPassword(passwordEncoder.encode(person.getPassword()));
         personRepository.save(person);
     }
 
