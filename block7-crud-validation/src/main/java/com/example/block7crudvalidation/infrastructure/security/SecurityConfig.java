@@ -1,11 +1,13 @@
 package com.example.block7crudvalidation.infrastructure.security;
 
+import com.example.block7crudvalidation.infrastructure.security.authorities.Role;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
@@ -29,11 +31,14 @@ public class SecurityConfig {
         );
         usernameAuthenticationFilter.setFilterProcessesUrl("/login");
 
-        http
+        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.NEVER)
+            .and()
             .csrf().disable()
             .addFilter(usernameAuthenticationFilter)
             .addFilterAfter(new CustomAuthorizationFilter(this.jwtConfig.getKey()), CustomAuthenticationFilter.class)
-            .authorizeRequests().antMatchers(HttpMethod.GET, "/getall").authenticated()
+            .authorizeRequests()
+            .antMatchers(HttpMethod.GET, "/getall").authenticated()
+            //.antMatchers(HttpMethod.GET, "/person/**").hasAuthority(Role.ROLE_ADMIN.getAuthority())
             .and().authorizeRequests().anyRequest().permitAll();
 
         return http.build();

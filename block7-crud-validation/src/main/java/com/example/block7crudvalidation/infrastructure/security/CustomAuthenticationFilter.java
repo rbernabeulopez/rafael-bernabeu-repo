@@ -10,6 +10,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import javax.servlet.FilterChain;
@@ -58,10 +59,13 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
         Date createdDate = new Date();
         Date expirationDate = new Date(createdDate.getTime() + tokenExpirationTime);
 
+        var authorities = ((User) authResult.getPrincipal()).getAuthorities();
+
         String token = Jwts.builder()
                 .setSubject(authResult.getName())
                 .setIssuedAt(createdDate)
                 .setExpiration(expirationDate)
+                .claim("authorities", authorities.stream().map(GrantedAuthority::getAuthority).toList())
                 .signWith(SignatureAlgorithm.HS512, this.secretJwtKey)
                 .compact();
 

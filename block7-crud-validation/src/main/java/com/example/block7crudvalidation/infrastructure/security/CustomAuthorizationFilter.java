@@ -1,5 +1,6 @@
 package com.example.block7crudvalidation.infrastructure.security;
 
+import com.example.block7crudvalidation.infrastructure.security.authorities.BaseGrantedAuthority;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.JwtException;
@@ -15,6 +16,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 @AllArgsConstructor
 public class CustomAuthorizationFilter extends OncePerRequestFilter {
@@ -40,7 +42,14 @@ public class CustomAuthorizationFilter extends OncePerRequestFilter {
             Jws<Claims> claimsJws = Jwts.parser().setSigningKey(this.secretJwtKey).parseClaimsJws(token);
             String username = claimsJws.getBody().getSubject();
 
-            Authentication usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(username, null, null);
+            List<BaseGrantedAuthority> authorities = null;
+            Object authoritiesObject = claimsJws.getBody().get("authorities");
+            if(authoritiesObject != null) {
+                authorities = ((List<String>) authoritiesObject).stream().map(BaseGrantedAuthority::new).toList();
+            }
+
+
+            Authentication usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(username, null, authorities);
             SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
 
             filterChain.doFilter(request, response);

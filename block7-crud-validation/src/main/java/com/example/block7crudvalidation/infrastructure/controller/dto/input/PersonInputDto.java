@@ -36,4 +36,6 @@ public class PersonInputDto {
 
     @JsonProperty("termination_date")
     private LocalDate terminationDate;
+
+    private boolean admin;
 }

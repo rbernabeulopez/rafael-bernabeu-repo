@@ -56,4 +56,7 @@ public class Person {
 
     @OneToOne(cascade = CascadeType.ALL)
     private Professor professor;
+
+    @Column(nullable = false)
+    private boolean admin;
 }

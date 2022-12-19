@@ -1,6 +1,8 @@
 package com.example.block7crudvalidation.infrastructure.security;
 
 import com.example.block7crudvalidation.domain.entity.Person;
+import com.example.block7crudvalidation.infrastructure.security.authorities.BaseGrantedAuthority;
+import com.example.block7crudvalidation.infrastructure.security.authorities.Role;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -8,7 +10,9 @@ import lombok.ToString;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 @EqualsAndHashCode
 @ToString
@@ -20,7 +24,13 @@ public class User implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        List<BaseGrantedAuthority> authorities = new ArrayList<>();
+        if(person.isAdmin()) {
+            authorities.add(new BaseGrantedAuthority(Role.ROLE_ADMIN.getAuthority()));
+        } else {
+            authorities.add(new BaseGrantedAuthority(Role.ROLE_USER.getAuthority()));
+        }
+        return authorities;
     }
 
     @Override
