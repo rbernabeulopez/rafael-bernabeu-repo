@@ -15,7 +15,9 @@
 						"exec": [
 							"pm.test(\"Your test name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.environment.set(\"personId\", jsonData[0].id);\r",
+							"    if(jsonData.length > 0) {\r",
+							"        pm.environment.set(\"personId\", jsonData[0].id);\r",
+							"    }\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -26,19 +28,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/person?ouputType=full",
+					"raw": "localhost:8080/getall",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"person"
-					],
-					"query": [
-						{
-							"key": "ouputType",
-							"value": "full"
-						}
+						"getall"
 					]
 				}
 			},
@@ -484,11 +480,14 @@
 		{
 			"name": "Save Person",
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"city\": \"Alicante\",\r\n    \"company_email\": \"company@mail.com\",\r\n    \"imagen_url\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUxm0Ig3QDrzXliFv2rNg0oLr0KH0RssgWtJ8kwvL8A&s\",\r\n    \"usuario\": \"Rafael\",\r\n    \"personal_email\": \"personal@mail.com\",\r\n    \"surname\": \"Ortuño\",\r\n    \"name\": \"rbl\",\r\n    \"password\": \"1234\",\r\n    \"created_date\": \"2022-09-12\",\r\n    \"termination_date\": \"2023-10-05\"\r\n}",
+					"raw": "{\r\n    \"city\": \"Alicante\",\r\n    \"company_email\": \"company@mail.com\",\r\n    \"imagen_url\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUxm0Ig3QDrzXliFv2rNg0oLr0KH0RssgWtJ8kwvL8A&s\",\r\n    \"usuario\": \"Rafael\",\r\n    \"personal_email\": \"personal@mail.com\",\r\n    \"surname\": \"Ortuño\",\r\n    \"name\": \"rbl\",\r\n    \"password\": \"1234\",\r\n    \"created_date\": \"2022-09-12\",\r\n    \"termination_date\": \"2023-10-05\",\r\n    \"admin\": true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -540,15 +539,6 @@
 			"request": {
 				"method": "POST",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"studentId\": \"{{studentId}}\",\r\n    \"subject\": \"Spring\",\r\n    \"comments\": \"Boot\",\r\n    \"initialDate\": \"2021-10-03\",\r\n    \"finishDate\": \"2021-10-03\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
 					"raw": "localhost:8080/studentsStudies",
 					"host": [
@@ -700,6 +690,77 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.headers.get(\"Authorization\");\r",
+							"    pm.environment.set(\"tokenJWT\", jsonData.replace(\"Bearer \",\"\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Rafael\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{tokenJWT}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
