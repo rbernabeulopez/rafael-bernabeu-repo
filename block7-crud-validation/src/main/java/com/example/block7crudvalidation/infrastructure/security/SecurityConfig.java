@@ -31,15 +31,15 @@ public class SecurityConfig {
         );
         usernameAuthenticationFilter.setFilterProcessesUrl("/login");
 
-        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.NEVER)
+        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             .and()
             .csrf().disable()
             .addFilter(usernameAuthenticationFilter)
             .addFilterAfter(new CustomAuthorizationFilter(this.jwtConfig.getKey()), CustomAuthenticationFilter.class)
             .authorizeRequests()
-            .antMatchers(HttpMethod.GET, "/getall").authenticated()
-            //.antMatchers(HttpMethod.GET, "/person/**").hasAuthority(Role.ROLE_ADMIN.getAuthority())
-            .and().authorizeRequests().anyRequest().permitAll();
+            .antMatchers("/addperson").permitAll()
+            .antMatchers(HttpMethod.GET, "**").permitAll()
+            .and().authorizeRequests().anyRequest().hasAuthority(Role.ROLE_ADMIN.getAuthority());
 
         return http.build();
     }
