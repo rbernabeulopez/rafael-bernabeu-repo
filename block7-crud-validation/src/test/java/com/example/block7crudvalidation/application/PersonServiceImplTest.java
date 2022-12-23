@@ -12,6 +12,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -29,6 +30,9 @@ class PersonServiceImplTest {
 
     @Mock
     private PersonRepository personRepository;
+
+    @Mock
+    private PasswordEncoder passwordEncoder;
 
     @Test
     void searchByIdThatExists() {
@@ -109,12 +113,14 @@ class PersonServiceImplTest {
             .companyEmail("chuchi@bosonit.com").createdDate(LocalDate.EPOCH).imageUrl("https://image.jpg")
             .user("chuchi")
             .build();
+        given(passwordEncoder.encode(expectedPerson.getPassword())).willReturn(expectedPerson.getPassword());
         given(personRepository.save(expectedPerson)).willReturn(expectedPerson);
 
         // WHEN
         assertDoesNotThrow(() -> personService.save(expectedPerson));
 
         // THEN
+        verify(passwordEncoder, times(1)).encode(expectedPerson.getPassword());
         verify(personRepository, times(1)).save(expectedPerson);
     }
 

@@ -10,15 +10,19 @@ import com.example.block7crudvalidation.infrastructure.controller.dto.output.Pro
 import com.example.block7crudvalidation.infrastructure.controller.dto.output.ProfessorOutputDto;
 import com.example.block7crudvalidation.infrastructure.mapper.PersonMapper;
 import com.example.block7crudvalidation.infrastructure.mapper.ProfessorMapper;
+import com.example.block7crudvalidation.infrastructure.security.SecurityConfig;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.util.Pair;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 
@@ -32,7 +36,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
-@AutoConfigureMockMvc
+@AutoConfigureMockMvc(addFilters = false)
 class ProfessorTest {
     @Autowired
     private ProfessorRepository professorRepository;
