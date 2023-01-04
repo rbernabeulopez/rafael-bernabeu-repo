@@ -1,0 +1,35 @@
+version: "3.1"
+
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_DB=rentauto
+    networks:
+      - postgresql
+  keycloak:
+    image: jboss/keycloak:latest
+    restart: always
+    ports:
+      - "4300:8080"
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+      - DB_VENDOR=postgres
+      - DB_ADDR=db
+      - DB_DATABASE=rentauto
+      - DB_USER=postgres
+      - DB_PASSWORD=1234
+    networks:
+      - postgresql
+    depends_on:
+      - db
+networks:
+    postgresql:
+        driver: bridge
+volumes:
+  postgres:
